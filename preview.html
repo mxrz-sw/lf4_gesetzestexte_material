@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LF4 Gesetze & Verordnungen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .law-section {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .law-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .law-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            gap: 20px;
+        }
+
+        .law-title {
+            font-size: 1.4em;
+            color: #667eea;
+            font-weight: 600;
+            flex: 1;
+        }
+
+        .law-link {
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9em;
+            white-space: nowrap;
+            transition: background 0.3s ease;
+        }
+
+        .law-link:hover {
+            background: #764ba2;
+        }
+
+        .law-description {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1em;
+            margin-left: 0;
+        }
+
+        .law-description strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .law-header {
+                flex-direction: column;
+            }
+
+            .law-link {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Gesetze & Verordnungen</h1>
+            <p>Übersicht der wichtigsten deutschen und europäischen Rechtsvorschriften</p>
+        </header>
+
+        <div class="content">
+            <div class="law-section">
+                <div class="law-header">
+                    <div class="law-title">🇪🇺 EU-DSGVO</div>
+                    <a href="https://dsgvo-gesetz.de" class="law-link" target="_blank">Zum Gesetz</a>
+                </div>
+                <p class="law-description">
+                    <strong>Europäische Datenschutz-Grundverordnung:</strong> Regelt den Schutz personenbezogener Daten innerhalb der Europäischen Union.
+                </p>
+            </div>
+
+            <div class="law-section">
+                <div class="law-header">
+                    <div class="law-title">🇩🇪 BDSG</div>
+                    <a href="https://www.gesetze-im-internet.de/bdsg_2018/" class="law-link" target="_blank">Zum Gesetz</a>
+                </div>
+                <p class="law-description">
+                    <strong>Bundesdatenschutzgesetz:</strong> Ergänzt die DSGVO für den deutschen Raum und stellt sicher, dass der Datenschutz im Einklang mit EU-Recht steht.
+                </p>
+            </div>
+
+            <div class="law-section">
+                <div class="law-header">
+                    <div class="law-title">🔒 ITSiG 2.0</div>
+                    <a href="https://www.bsi.bund.de/DE/Das-BSI/Auftrag/Gesetze-und-Verordnungen/IT-SiG/2-0/it_sig-2-0_node.html" class="law-link" target="_blank">Zum Gesetz</a>
+                </div>
+                <p class="law-description">
+                    <strong>IT-Sicherheitsgesetz 2.0:</strong> Dient der Erhöhung der IT-Sicherheit. Es wird als „Änderungsgesetz" definiert, das bestehende Paragrafen in anderen Gesetzen anpasst.
+                </p>
+            </div>
+
+            <div class="law-section">
+                <div class="law-header">
+                    <div class="law-title">©️ UrhG</div>
+                    <a href="https://www.gesetze-im-internet.de/urhg/" class="law-link" target="_blank">Zum Gesetz</a>
+                </div>
+                <p class="law-description">
+                    <strong>Urheberrechtsgesetz:</strong> Schützt das geistige Eigentum und Werke von Urhebern, wie zum Beispiel Computerprogramme, Lichtbilder oder Filmwerke.
+                </p>
+            </div>
+
+            <div class="law-section">
+                <div class="law-header">
+                    <div class="law-title">📞 TKG</div>
+                    <a href="https://www.gesetze-im-internet.de/tkg_2004/" class="law-link" target="_blank">Zum Gesetz</a>
+                </div>
+                <p class="law-description">
+                    <strong>Telekommunikationsgesetz:</strong> Regelt den Betrieb von Kommunikationsnetzen und -diensten für Anbieter wie die Telekom oder Vodafone.
+                </p>
+            </div>
+
+            <div class="law-section">
+                <div class="law-header">
+                    <div class="law-title">📖 BGB</div>
+                    <a href="https://www.gesetze-im-internet.de/bgb/" class="law-link" target="_blank">Zum Gesetz</a>
+                </div>
+                <p class="law-description">
+                    <strong>Bürgerliches Gesetzbuch:</strong> Das zentrale Gesetzbuch des deutschen Privatrechts.
+                </p>
+            </div>
+
+            <div class="law-section">
+                <div class="law-header">
+                    <div class="law-title">⚖️ DDG</div>
+                    <a href="https://www.gesetze-im-internet.de/ddg/" class="law-link" target="_blank">Zum Gesetz</a>
+                </div>
+                <p class="law-description">
+                    <strong>Digitale Dienste Gesetz:</strong> Vormals als TMG (Telemediengesetz) bekannt; es regelt die Pflichten für Diensteanbieter.
+                </p>
+            </div>
+
+            <div class="law-section">
+                <div class="law-header">
+                    <div class="law-title">🌐 DSA</div>
+                    <a href="https://www.bka.de/EN/OurTasks/Remit/CentralAgency/DigitalServicesAct/DigitalServicesAct_node.html" class="law-link" target="_blank">Zum Gesetz</a>
+                </div>
+                <p class="law-description">
+                    <strong>Digital Services Act:</strong> Ein zusätzliches EU-Gesetz für digitale Dienste wie Online-Plattformen und Suchmaschinen.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>📚 LF4 Gesetze & Verordnungen | <a href="https://github.com/mxrz-sw/lf4_gesetzestexte_material" style="color: #667eea; text-decoration: none;">Quelle auf GitHub</a></p>
+        </footer>
+    </div>
+</body>
+</html>
